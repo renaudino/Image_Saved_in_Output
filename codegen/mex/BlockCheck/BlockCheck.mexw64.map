@@ -1,0 +1,277 @@
+ BlockCheck
+
+ Timestamp is 52b45e94 (Fri Dec 20 16:13:24 2013)
+
+ Preferred load address is 0000000180000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001f62H .text                   CODE
+ 0001:00001f70 00000092H .text$x                 CODE
+ 0002:00000000 00000278H .idata$5                DATA
+ 0002:00000278 00000008H .CRT$XCA                DATA
+ 0002:00000280 00000008H .CRT$XCZ                DATA
+ 0002:00000288 00000008H .CRT$XIA                DATA
+ 0002:00000290 00000008H .CRT$XIAA               DATA
+ 0002:00000298 00000008H .CRT$XIZ                DATA
+ 0002:000002a0 00000298H .rdata                  DATA
+ 0002:00000538 00000008H .rtc$IAA                DATA
+ 0002:00000540 00000008H .rtc$IZZ                DATA
+ 0002:00000548 00000008H .rtc$TAA                DATA
+ 0002:00000550 00000008H .rtc$TZZ                DATA
+ 0002:00000558 00000244H .xdata                  DATA
+ 0002:0000079c 00000078H .idata$2                DATA
+ 0002:00000814 00000014H .idata$3                DATA
+ 0002:00000828 00000278H .idata$4                DATA
+ 0002:00000aa0 00000678H .idata$6                DATA
+ 0002:00001120 000000c4H .edata                  DATA
+ 0003:00000000 00000178H .data                   DATA
+ 0003:00000180 000005d8H .bss                    DATA
+ 0004:00000000 000001ecH .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000180000000     <linker-defined>
+ 0001:00000170       BlockCheck_initialize      0000000180001170 f   BlockCheck_initialize.obj
+ 0001:000001e0       BlockCheck_atexit          00000001800011e0 f   BlockCheck_terminate.obj
+ 0001:00000240       BlockCheck_terminate       0000000180001240 f   BlockCheck_terminate.obj
+ 0001:00000260       BlockCheck                 0000000180001260 f   BlockCheck.obj
+ 0001:00000d50       BlockCheck_api             0000000180001d50 f   BlockCheck_api.obj
+ 0001:00001070       emxEnsureCapacity          0000000180002070 f   BlockCheck_emxutil.obj
+ 0001:00001180       emxFree_real_T             0000000180002180 f   BlockCheck_emxutil.obj
+ 0001:000011c0       emxInit_real_T             00000001800021c0 f   BlockCheck_emxutil.obj
+ 0001:00001360       BlockCheck_atexit_wrapper  0000000180002360 f   BlockCheck_mex.obj
+ 0001:00001370       mexFunction                0000000180002370 f   BlockCheck_mex.obj
+ 0001:000013c0       emlrtMexFcnProperties      00000001800023c0 f   BlockCheck_mex.obj
+ 0001:000014fa       mxGetPr                    00000001800024fa f   libmx:libmx.dll
+ 0001:00001500       mxCreateNumericArray_700   0000000180002500 f   libmx:libmx.dll
+ 0001:00001506       mxCreateDoubleScalar       0000000180002506 f   libmx:libmx.dll
+ 0001:0000150c       mxGetData                  000000018000250c f   libmx:libmx.dll
+ 0001:00001512       mxSetFieldByNumber_700     0000000180002512 f   libmx:libmx.dll
+ 0001:00001518       mxCreateString             0000000180002518 f   libmx:libmx.dll
+ 0001:0000151e       mxCreateLogicalMatrix_700  000000018000251e f   libmx:libmx.dll
+ 0001:00001524       mxCreateStructMatrix_700   0000000180002524 f   libmx:libmx.dll
+ 0001:0000152a       mexPutVariable             000000018000252a f   libmex:libmex.dll
+ 0001:00001530       mexGetVariable             0000000180002530 f   libmex:libmex.dll
+ 0001:00001536       mexErrMsgIdAndTxt          0000000180002536 f   libmex:libmex.dll
+ 0001:0000153c       mexAtExit                  000000018000253c f   libmex:libmex.dll
+ 0001:00001542       emlrtFirstTimeR2012b       0000000180002542 f   libemlrt:libemlrt.dll
+ 0001:00001548       emlrtEnterRtStackR2012b    0000000180002548 f   libemlrt:libemlrt.dll
+ 0001:0000154e       emlrtClearAllocCountR2012b 000000018000254e f   libemlrt:libemlrt.dll
+ 0001:00001554       emlrtCreateRootTLS         0000000180002554 f   libemlrt:libemlrt.dll
+ 0001:0000155a       emlrtGetBreakCheckFlagAddressR2012b 000000018000255a f   libemlrt:libemlrt.dll
+ 0001:00001560       emlrtDestroyRootTLS        0000000180002560 f   libemlrt:libemlrt.dll
+ 0001:00001566       emlrtLeaveRtStackR2012b    0000000180002566 f   libemlrt:libemlrt.dll
+ 0001:0000156c       emlrtBreakCheckR2012b      000000018000256c f   libemlrt:libemlrt.dll
+ 0001:00001572       emlrtPopRtStackR2012b      0000000180002572 f   libemlrt:libemlrt.dll
+ 0001:00001578       emlrtDynamicBoundsCheckR2012b 0000000180002578 f   libemlrt:libemlrt.dll
+ 0001:0000157e       emlrtPushRtStackR2012b     000000018000257e f   libemlrt:libemlrt.dll
+ 0001:00001584       emlrtForLoopVectorCheckR2012b 0000000180002584 f   libemlrt:libemlrt.dll
+ 0001:0000158a       emlrtAssign                000000018000258a f   libemlrt:libemlrt.dll
+ 0001:00001590       emlrtDestroyArray          0000000180002590 f   libemlrt:libemlrt.dll
+ 0001:00001596       emlrtCheckBuiltInR2012b    0000000180002596 f   libemlrt:libemlrt.dll
+ 0001:0000159c       emlrtImportArrayR2011b     000000018000259c f   libemlrt:libemlrt.dll
+ 0001:000015a2       emlrtCheckVsBuiltInR2012b  00000001800025a2 f   libemlrt:libemlrt.dll
+ 0001:000015a8       emlrtAlias                 00000001800025a8 f   libemlrt:libemlrt.dll
+ 0001:000015ae       emlrtHeapReferenceStackLeaveFcnR2012b 00000001800025ae f   libemlrt:libemlrt.dll
+ 0001:000015b4       emlrtAliasP                00000001800025b4 f   libemlrt:libemlrt.dll
+ 0001:000015ba       emlrtHeapReferenceStackEnterFcnR2012b 00000001800025ba f   libemlrt:libemlrt.dll
+ 0001:000015c0       emlrtFreeMex               00000001800025c0 f   libemlrt:libemlrt.dll
+ 0001:000015c6       emlrtHeapAllocationErrorR2012b 00000001800025c6 f   libemlrt:libemlrt.dll
+ 0001:000015cc       emlrtCallocMex             00000001800025cc f   libemlrt:libemlrt.dll
+ 0001:000015d2       emlrtSizeMulR2012b         00000001800025d2 f   libemlrt:libemlrt.dll
+ 0001:000015d8       emlrtPushHeapReferenceStackR2012b 00000001800025d8 f   libemlrt:libemlrt.dll
+ 0001:000015de       emlrtMallocMex             00000001800025de f   libemlrt:libemlrt.dll
+ 0001:000015e4       emlrtReturnArrayR2009a     00000001800025e4 f   libemlrt:libemlrt.dll
+ 0001:000015ea       muDoubleScalarAbs          00000001800025ea f   libmwmathutil:libmwmathutil.dll
+ 0001:000015f0       __GSHandlerCheckCommon     00000001800025f0 f   MSVCRT:gshandler.obj
+ 0001:00001654       __GSHandlerCheck           0000000180002654 f   MSVCRT:gshandler.obj
+ 0001:00001690       __security_check_cookie    0000000180002690 f   MSVCRT:amdsecgs.obj
+ 0001:000016b0       memcpy                     00000001800026b0 f   MSVCRT:MSVCR100.dll
+ 0001:00001718       _CRT_INIT                  0000000180002718 f   MSVCRT:crtdll.obj
+ 0001:00001ab0       _DllMainCRTStartup         0000000180002ab0 f   MSVCRT:crtdll.obj
+ 0001:00001af0       __report_gsfailure         0000000180002af0 f   MSVCRT:gs_report.obj
+ 0001:00001c3c       __clean_type_info_names    0000000180002c3c f   MSVCRT:tncleanup.obj
+ 0001:00001c48       _onexit                    0000000180002c48 f   MSVCRT:atonexit.obj
+ 0001:00001cf8       atexit                     0000000180002cf8 f   MSVCRT:atonexit.obj
+ 0001:00001d10       _RTC_Initialize            0000000180002d10 f   MSVCRT:_initsect_.obj
+ 0001:00001d48       _RTC_Terminate             0000000180002d48 f   MSVCRT:_initsect_.obj
+ 0001:00001d80       _ValidateImageBase         0000000180002d80 f   MSVCRT:pesect.obj
+ 0001:00001db0       _FindPESection             0000000180002db0 f   MSVCRT:pesect.obj
+ 0001:00001e00       _IsNonwritableInCurrentImage 0000000180002e00 f   MSVCRT:pesect.obj
+ 0001:00001e42       _initterm                  0000000180002e42 f   MSVCRT:MSVCR100.dll
+ 0001:00001e48       _initterm_e                0000000180002e48 f   MSVCRT:MSVCR100.dll
+ 0001:00001e4e       _amsg_exit                 0000000180002e4e f   MSVCRT:MSVCR100.dll
+ 0001:00001e54       __C_specific_handler       0000000180002e54 f   MSVCRT:MSVCR100.dll
+ 0001:00001e5a       __CppXcptFilter            0000000180002e5a f   MSVCRT:MSVCR100.dll
+ 0001:00001e60       DllMain                    0000000180002e60 f   MSVCRT:dllmain.obj
+ 0001:00001e84       __security_init_cookie     0000000180002e84 f   MSVCRT:gs_support.obj
+ 0001:00001f38       __crt_debugger_hook        0000000180002f38 f   MSVCRT:MSVCR100.dll
+ 0001:00001f3e       __clean_type_info_names_internal 0000000180002f3e f   MSVCRT:MSVCR100.dll
+ 0001:00001f44       _unlock                    0000000180002f44 f   MSVCRT:MSVCR100.dll
+ 0001:00001f4a       __dllonexit                0000000180002f4a f   MSVCRT:MSVCR100.dll
+ 0001:00001f50       _lock                      0000000180002f50 f   MSVCRT:MSVCR100.dll
+ 0001:00001f56       RtlVirtualUnwind           0000000180002f56 f   kernel32:KERNEL32.dll
+ 0001:00001f5c       RtlLookupFunctionEntry     0000000180002f5c f   kernel32:KERNEL32.dll
+ 0002:00000000       __imp_GetSystemTimeAsFileTime 0000000180004000     kernel32:KERNEL32.dll
+ 0002:00000008       __imp_GetCurrentProcessId  0000000180004008     kernel32:KERNEL32.dll
+ 0002:00000010       __imp_GetCurrentThreadId   0000000180004010     kernel32:KERNEL32.dll
+ 0002:00000018       __imp_GetTickCount         0000000180004018     kernel32:KERNEL32.dll
+ 0002:00000020       __imp_QueryPerformanceCounter 0000000180004020     kernel32:KERNEL32.dll
+ 0002:00000028       __imp_DisableThreadLibraryCalls 0000000180004028     kernel32:KERNEL32.dll
+ 0002:00000030       __imp_RtlCaptureContext    0000000180004030     kernel32:KERNEL32.dll
+ 0002:00000038       __imp_RtlLookupFunctionEntry 0000000180004038     kernel32:KERNEL32.dll
+ 0002:00000040       __imp_RtlVirtualUnwind     0000000180004040     kernel32:KERNEL32.dll
+ 0002:00000048       __imp_IsDebuggerPresent    0000000180004048     kernel32:KERNEL32.dll
+ 0002:00000050       __imp_SetUnhandledExceptionFilter 0000000180004050     kernel32:KERNEL32.dll
+ 0002:00000058       __imp_UnhandledExceptionFilter 0000000180004058     kernel32:KERNEL32.dll
+ 0002:00000060       __imp_GetCurrentProcess    0000000180004060     kernel32:KERNEL32.dll
+ 0002:00000068       __imp_EncodePointer        0000000180004068     kernel32:KERNEL32.dll
+ 0002:00000070       __imp_Sleep                0000000180004070     kernel32:KERNEL32.dll
+ 0002:00000078       __imp_TerminateProcess     0000000180004078     kernel32:KERNEL32.dll
+ 0002:00000080       __imp_DecodePointer        0000000180004080     kernel32:KERNEL32.dll
+ 0002:00000088       \177KERNEL32_NULL_THUNK_DATA 0000000180004088     kernel32:KERNEL32.dll
+ 0002:00000090       __imp__onexit              0000000180004090     MSVCRT:MSVCR100.dll
+ 0002:00000098       __imp___dllonexit          0000000180004098     MSVCRT:MSVCR100.dll
+ 0002:000000a0       __imp__unlock              00000001800040a0     MSVCRT:MSVCR100.dll
+ 0002:000000a8       __imp___clean_type_info_names_internal 00000001800040a8     MSVCRT:MSVCR100.dll
+ 0002:000000b0       __imp___crt_debugger_hook  00000001800040b0     MSVCRT:MSVCR100.dll
+ 0002:000000b8       __imp___CppXcptFilter      00000001800040b8     MSVCRT:MSVCR100.dll
+ 0002:000000c0       __imp___C_specific_handler 00000001800040c0     MSVCRT:MSVCR100.dll
+ 0002:000000c8       __imp__amsg_exit           00000001800040c8     MSVCRT:MSVCR100.dll
+ 0002:000000d0       __imp__encoded_null        00000001800040d0     MSVCRT:MSVCR100.dll
+ 0002:000000d8       __imp_free                 00000001800040d8     MSVCRT:MSVCR100.dll
+ 0002:000000e0       __imp__initterm_e          00000001800040e0     MSVCRT:MSVCR100.dll
+ 0002:000000e8       __imp__initterm            00000001800040e8     MSVCRT:MSVCR100.dll
+ 0002:000000f0       __imp__malloc_crt          00000001800040f0     MSVCRT:MSVCR100.dll
+ 0002:000000f8       __imp_memcpy               00000001800040f8     MSVCRT:MSVCR100.dll
+ 0002:00000100       __imp__lock                0000000180004100     MSVCRT:MSVCR100.dll
+ 0002:00000108       \177MSVCR100_NULL_THUNK_DATA 0000000180004108     MSVCRT:MSVCR100.dll
+ 0002:00000110       __imp_emlrtHeapReferenceStackEnterFcnR2012b 0000000180004110     libemlrt:libemlrt.dll
+ 0002:00000118       __imp_emlrtFreeMex         0000000180004118     libemlrt:libemlrt.dll
+ 0002:00000120       __imp_emlrtHeapAllocationErrorR2012b 0000000180004120     libemlrt:libemlrt.dll
+ 0002:00000128       __imp_emlrtCallocMex       0000000180004128     libemlrt:libemlrt.dll
+ 0002:00000130       __imp_emlrtSizeMulR2012b   0000000180004130     libemlrt:libemlrt.dll
+ 0002:00000138       __imp_emlrtAliasP          0000000180004138     libemlrt:libemlrt.dll
+ 0002:00000140       __imp_emlrtMallocMex       0000000180004140     libemlrt:libemlrt.dll
+ 0002:00000148       __imp_emlrtReturnArrayR2009a 0000000180004148     libemlrt:libemlrt.dll
+ 0002:00000150       __imp_emlrtClearAllocCountR2012b 0000000180004150     libemlrt:libemlrt.dll
+ 0002:00000158       __imp_emlrtEnterRtStackR2012b 0000000180004158     libemlrt:libemlrt.dll
+ 0002:00000160       __imp_emlrtHeapReferenceStackLeaveFcnR2012b 0000000180004160     libemlrt:libemlrt.dll
+ 0002:00000168       __imp_emlrtCreateRootTLS   0000000180004168     libemlrt:libemlrt.dll
+ 0002:00000170       __imp_emlrtCheckVsBuiltInR2012b 0000000180004170     libemlrt:libemlrt.dll
+ 0002:00000178       __imp_emlrtImportArrayR2011b 0000000180004178     libemlrt:libemlrt.dll
+ 0002:00000180       __imp_emlrtCheckBuiltInR2012b 0000000180004180     libemlrt:libemlrt.dll
+ 0002:00000188       __imp_emlrtDestroyArray    0000000180004188     libemlrt:libemlrt.dll
+ 0002:00000190       __imp_emlrtAssign          0000000180004190     libemlrt:libemlrt.dll
+ 0002:00000198       __imp_emlrtForLoopVectorCheckR2012b 0000000180004198     libemlrt:libemlrt.dll
+ 0002:000001a0       __imp_emlrtPushRtStackR2012b 00000001800041a0     libemlrt:libemlrt.dll
+ 0002:000001a8       __imp_emlrtDynamicBoundsCheckR2012b 00000001800041a8     libemlrt:libemlrt.dll
+ 0002:000001b0       __imp_emlrtPopRtStackR2012b 00000001800041b0     libemlrt:libemlrt.dll
+ 0002:000001b8       __imp_emlrtBreakCheckR2012b 00000001800041b8     libemlrt:libemlrt.dll
+ 0002:000001c0       __imp_emlrtLeaveRtStackR2012b 00000001800041c0     libemlrt:libemlrt.dll
+ 0002:000001c8       __imp_emlrtDestroyRootTLS  00000001800041c8     libemlrt:libemlrt.dll
+ 0002:000001d0       __imp_emlrtPushHeapReferenceStackR2012b 00000001800041d0     libemlrt:libemlrt.dll
+ 0002:000001d8       __imp_emlrtGetBreakCheckFlagAddressR2012b 00000001800041d8     libemlrt:libemlrt.dll
+ 0002:000001e0       __imp_emlrtFirstTimeR2012b 00000001800041e0     libemlrt:libemlrt.dll
+ 0002:000001e8       __imp_emlrtAlias           00000001800041e8     libemlrt:libemlrt.dll
+ 0002:000001f0       \177libemlrt_NULL_THUNK_DATA 00000001800041f0     libemlrt:libemlrt.dll
+ 0002:000001f8       __imp_mexGetVariable       00000001800041f8     libmex:libmex.dll
+ 0002:00000200       __imp_mexAtExit            0000000180004200     libmex:libmex.dll
+ 0002:00000208       __imp_mexErrMsgIdAndTxt    0000000180004208     libmex:libmex.dll
+ 0002:00000210       __imp_mexPutVariable       0000000180004210     libmex:libmex.dll
+ 0002:00000218       \177libmex_NULL_THUNK_DATA 0000000180004218     libmex:libmex.dll
+ 0002:00000220       __imp_muDoubleScalarAbs    0000000180004220     libmwmathutil:libmwmathutil.dll
+ 0002:00000228       \177libmwmathutil_NULL_THUNK_DATA 0000000180004228     libmwmathutil:libmwmathutil.dll
+ 0002:00000230       __imp_mxCreateStructMatrix_700 0000000180004230     libmx:libmx.dll
+ 0002:00000238       __imp_mxCreateLogicalMatrix_700 0000000180004238     libmx:libmx.dll
+ 0002:00000240       __imp_mxCreateString       0000000180004240     libmx:libmx.dll
+ 0002:00000248       __imp_mxSetFieldByNumber_700 0000000180004248     libmx:libmx.dll
+ 0002:00000250       __imp_mxGetData            0000000180004250     libmx:libmx.dll
+ 0002:00000258       __imp_mxCreateDoubleScalar 0000000180004258     libmx:libmx.dll
+ 0002:00000260       __imp_mxCreateNumericArray_700 0000000180004260     libmx:libmx.dll
+ 0002:00000268       __imp_mxGetPr              0000000180004268     libmx:libmx.dll
+ 0002:00000270       \177libmx_NULL_THUNK_DATA  0000000180004270     libmx:libmx.dll
+ 0002:00000278       __xc_a                     0000000180004278     MSVCRT:cinitexe.obj
+ 0002:00000280       __xc_z                     0000000180004280     MSVCRT:cinitexe.obj
+ 0002:00000288       __xi_a                     0000000180004288     MSVCRT:cinitexe.obj
+ 0002:00000298       __xi_z                     0000000180004298     MSVCRT:cinitexe.obj
+ 0002:000002a0       ??_C@_00CNPNBAHC@?$AA@     00000001800042a0     BlockCheck_initialize.obj
+ 0002:000002b0       ??_C@_0FH@DOFCEKAL@C?3?1Mingming?1Master?5Thesis?1Superv@ 00000001800042b0     BlockCheck_initialize.obj
+ 0002:00000308       ??_C@_07JOJCOIBL@AppFace?$AA@ 0000000180004308     BlockCheck_initialize.obj
+ 0002:00000310       __real@4069000000000000    0000000180004310     BlockCheck_initialize.obj
+ 0002:00000318       ??_C@_06JDCIGNAE@wedges?$AA@ 0000000180004318     BlockCheck.obj
+ 0002:00000320       ??_C@_0FK@HKIDIPGG@C?3?1Mingming?1Master?5Thesis?1Superv@ 0000000180004320     BlockCheck.obj
+ 0002:00000380       ??_C@_0L@GFGGHPJL@BlockCheck?$AA@ 0000000180004380     BlockCheck.obj
+ 0002:00000390       __real@3e45798ee2308c3a    0000000180004390     BlockCheck.obj
+ 0002:00000398       __real@3ddb7cdfd9d7bdbb    0000000180004398     BlockCheck.obj
+ 0002:000003a0       __real@0000000000000000    00000001800043a0     BlockCheck.obj
+ 0002:000003a8       __real@3ff0000000000000    00000001800043a8     BlockCheck.obj
+ 0002:000003b0       __real@bff0000000000000    00000001800043b0     BlockCheck.obj
+ 0002:000003b8       ??_C@_0P@OCIEGAPM@BlockCheck_api?$AA@ 00000001800043b8     BlockCheck_api.obj
+ 0002:000003d4       ??_C@_06BNJCAIGJ@double?$AA@ 00000001800043d4     BlockCheck_api.obj
+ 0002:000003dc       ??_C@_06FJKEMHGD@global?$AA@ 00000001800043dc     BlockCheck_api.obj
+ 0002:000003e4       ??_C@_06MAIEDKPI@Nblock?$AA@ 00000001800043e4     BlockCheck_api.obj
+ 0002:000003ec       ??_C@_04BMJONEAF@p_re?$AA@ 00000001800043ec     BlockCheck_api.obj
+ 0002:000003f4       ??_C@_02ICKFBNAI@bl?$AA@   00000001800043f4     BlockCheck_api.obj
+ 0002:000003f8       ??_C@_0CH@DLJMAEFE@emlcoder?3emlmex?3TooManyOutputArg@ 00000001800043f8     BlockCheck_mex.obj
+ 0002:00000420       ??_C@_0DI@IDIAJANA@Too?5many?5output?5arguments?5for?5en@ 0000000180004420     BlockCheck_mex.obj
+ 0002:00000458       ??_C@_0CE@IHHIPLIO@emlcoder?3emlmex?3WrongNumberOfInp@ 0000000180004458     BlockCheck_mex.obj
+ 0002:00000480       ??_C@_0DA@BFDLPLCK@2?5inputs?5required?5for?5entry?9poin@ 0000000180004480     BlockCheck_mex.obj
+ 0002:000004b0       ??_C@_0BD@NDMMKFEF@8?40?40?4783?5?$CIR2012b?$CJ?$AA@ 00000001800044b0     BlockCheck_mex.obj
+ 0002:000004c8       __real@4000000000000000    00000001800044c8     BlockCheck_mex.obj
+ 0002:000004d0       ??_C@_0P@FDPDNMBC@ConstantInputs?$AA@ 00000001800044d0     BlockCheck_mex.obj
+ 0002:000004e0       ??_C@_0BA@HBLCOFA@NumberOfOutputs?$AA@ 00000001800044e0     BlockCheck_mex.obj
+ 0002:000004f0       ??_C@_0P@DJPKAEOC@NumberOfInputs?$AA@ 00000001800044f0     BlockCheck_mex.obj
+ 0002:00000500       ??_C@_04FABLJDN@Name?$AA@  0000000180004500     BlockCheck_mex.obj
+ 0002:00000508       ??_C@_0M@HOOGCLMJ@EntryPoints?$AA@ 0000000180004508     BlockCheck_mex.obj
+ 0002:00000518       ??_C@_07NGFJPNPN@Version?$AA@ 0000000180004518     BlockCheck_mex.obj
+ 0002:00000520       _pRawDllMain               0000000180004520     MSVCRT:crtdll.obj
+ 0002:00000520       _pDefaultRawDllMain        0000000180004520     MSVCRT:crtdll.obj
+ 0002:00000538       __rtc_iaa                  0000000180004538     MSVCRT:_initsect_.obj
+ 0002:00000540       __rtc_izz                  0000000180004540     MSVCRT:_initsect_.obj
+ 0002:00000548       __rtc_taa                  0000000180004548     MSVCRT:_initsect_.obj
+ 0002:00000550       __rtc_tzz                  0000000180004550     MSVCRT:_initsect_.obj
+ 0002:0000079c       __IMPORT_DESCRIPTOR_libmx  000000018000479c     libmx:libmx.dll
+ 0002:000007b0       __IMPORT_DESCRIPTOR_libmex 00000001800047b0     libmex:libmex.dll
+ 0002:000007c4       __IMPORT_DESCRIPTOR_libemlrt 00000001800047c4     libemlrt:libemlrt.dll
+ 0002:000007d8       __IMPORT_DESCRIPTOR_libmwmathutil 00000001800047d8     libmwmathutil:libmwmathutil.dll
+ 0002:000007ec       __IMPORT_DESCRIPTOR_MSVCR100 00000001800047ec     MSVCRT:MSVCR100.dll
+ 0002:00000800       __IMPORT_DESCRIPTOR_KERNEL32 0000000180004800     kernel32:KERNEL32.dll
+ 0002:00000814       __NULL_IMPORT_DESCRIPTOR   0000000180004814     libmx:libmx.dll
+ 0003:00000110       emlrtContextGlobal         0000000180006110     BlockCheck_mex.obj
+ 0003:00000150       _fltused                   0000000180006150     MSVCRT:dllsupp.obj
+ 0003:00000158       __security_cookie          0000000180006158     MSVCRT:gs_cookie.obj
+ 0003:00000160       __security_cookie_complement 0000000180006160     MSVCRT:gs_cookie.obj
+ 0003:00000170       __native_dllmain_reason    0000000180006170     MSVCRT:natstart.obj
+ 0003:00000174       __native_vcclrit_reason    0000000180006174     MSVCRT:natstart.obj
+ 0003:00000180       emlrtRootTLSGlobal         0000000180006180     BlockCheck_mex.obj
+ 0003:00000700       ?__type_info_root_node@@3U__type_info_node@@A 0000000180006700     MSVCRT:tncleanup.obj
+ 0003:00000710       Nblock_dirty               0000000180006710     <common>
+ 0003:00000714       wedges_dirty               0000000180006714     <common>
+ 0003:00000718       wedges                     0000000180006718     <common>
+ 0003:00000720       Nblock                     0000000180006720     <common>
+ 0003:00000728       emlrtBreakCheckR2012bFlagVar 0000000180006728     <common>
+ 0003:00000730       __native_startup_state     0000000180006730     <common>
+ 0003:00000738       __native_startup_lock      0000000180006738     <common>
+ 0003:00000740       __onexitend                0000000180006740     <common>
+ 0003:00000748       __onexitbegin              0000000180006748     <common>
+ 0003:00000750       __dyn_tls_init_callback    0000000180006750     <common>
+
+ entry point at        0001:00001ab0
+
+ Static symbols
+
+ 0001:00000000       BlockCheck_once            0000000180001000 f   BlockCheck_initialize.obj
+ 0001:000009c0       b_emlrt_marshallOut        00000001800019c0 f   BlockCheck_api.obj
+ 0001:00000ac0       i_emlrt_marshallIn         0000000180001ac0 f   BlockCheck_api.obj
+ 0001:00000bd0       emlrt_marshallIn           0000000180001bd0 f   BlockCheck_api.obj
+ 0001:00000c80       c_emlrt_marshallIn         0000000180001c80 f   BlockCheck_api.obj
+ 0001:00001290       BlockCheck_mexFunction     0000000180002290 f   BlockCheck_mex.obj
+ 0001:000016b8       pre_c_init                 00000001800026b8 f   MSVCRT:crtdll.obj
+ 0001:00001974       __DllMainCRTStartup        0000000180002974 f   MSVCRT:crtdll.obj
+ 0001:00001f70       __DllMainCRTStartup$filt$0 0000000180002f70 f   MSVCRT:crtdll.obj
+ 0001:00001fa0       __DllMainCRTStartup$fin$1  0000000180002fa0 f   MSVCRT:crtdll.obj
+ 0001:00001fba       _onexit$fin$0              0000000180002fba f   MSVCRT:atonexit.obj
+ 0001:00001fe0       _IsNonwritableInCurrentImage$filt$0 0000000180002fe0 f   MSVCRT:pesect.obj

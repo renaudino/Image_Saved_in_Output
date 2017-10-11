@@ -1,0 +1,308 @@
+ RefField
+
+ Timestamp is 52b45f82 (Fri Dec 20 16:17:22 2013)
+
+ Preferred load address is 0000000180000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00004752H .text                   CODE
+ 0001:00004760 00000092H .text$x                 CODE
+ 0002:00000000 00000288H .idata$5                DATA
+ 0002:00000288 00000008H .CRT$XCA                DATA
+ 0002:00000290 00000008H .CRT$XCZ                DATA
+ 0002:00000298 00000008H .CRT$XIA                DATA
+ 0002:000002a0 00000008H .CRT$XIAA               DATA
+ 0002:000002a8 00000008H .CRT$XIZ                DATA
+ 0002:000002b0 000002b0H .rdata                  DATA
+ 0002:00000560 00000008H .rtc$IAA                DATA
+ 0002:00000568 00000008H .rtc$IZZ                DATA
+ 0002:00000570 00000008H .rtc$TAA                DATA
+ 0002:00000578 00000008H .rtc$TZZ                DATA
+ 0002:00000580 0000028cH .xdata                  DATA
+ 0002:0000080c 00000078H .idata$2                DATA
+ 0002:00000884 00000014H .idata$3                DATA
+ 0002:00000898 00000288H .idata$4                DATA
+ 0002:00000b20 00000650H .idata$6                DATA
+ 0002:00001170 000000bcH .edata                  DATA
+ 0003:00000000 00000328H .data                   DATA
+ 0003:00000340 00001910H .bss                    DATA
+ 0004:00000000 000001ecH .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000180000000     <linker-defined>
+ 0001:00000140       RefField_initialize        0000000180001140 f   RefField_initialize.obj
+ 0001:000001b0       RefField_atexit            00000001800011b0 f   RefField_terminate.obj
+ 0001:00000200       RefField_terminate         0000000180001200 f   RefField_terminate.obj
+ 0001:00000220       RefField                   0000000180001220 f   RefField.obj
+ 0001:00002bf0       norm                       0000000180003bf0 f   norm.obj
+ 0001:00002ca0       cross                      0000000180003ca0 f   cross.obj
+ 0001:00002d00       b_sqrt                     0000000180003d00 f   sqrt.obj
+ 0001:00003260       RefField_api               0000000180004260 f   RefField_api.obj
+ 0001:00003b50       RefField_atexit_wrapper    0000000180004b50 f   RefField_mex.obj
+ 0001:00003b60       mexFunction                0000000180004b60 f   RefField_mex.obj
+ 0001:00003bb0       emlrtMexFcnProperties      0000000180004bb0 f   RefField_mex.obj
+ 0001:00003cea       mxGetNaN                   0000000180004cea f   libmx:libmx.dll
+ 0001:00003cf0       mxGetInf                   0000000180004cf0 f   libmx:libmx.dll
+ 0001:00003cf6       mxGetPi                    0000000180004cf6 f   libmx:libmx.dll
+ 0001:00003cfc       mxGetPr                    0000000180004cfc f   libmx:libmx.dll
+ 0001:00003d02       mxCreateNumericMatrix_700  0000000180004d02 f   libmx:libmx.dll
+ 0001:00003d08       mxCreateNumericArray_700   0000000180004d08 f   libmx:libmx.dll
+ 0001:00003d0e       mxCreateDoubleScalar       0000000180004d0e f   libmx:libmx.dll
+ 0001:00003d14       mxGetData                  0000000180004d14 f   libmx:libmx.dll
+ 0001:00003d1a       mxSetFieldByNumber_700     0000000180004d1a f   libmx:libmx.dll
+ 0001:00003d20       mxCreateString             0000000180004d20 f   libmx:libmx.dll
+ 0001:00003d26       mxCreateLogicalMatrix_700  0000000180004d26 f   libmx:libmx.dll
+ 0001:00003d2c       mxCreateStructMatrix_700   0000000180004d2c f   libmx:libmx.dll
+ 0001:00003d32       mexPutVariable             0000000180004d32 f   libmex:libmex.dll
+ 0001:00003d38       mexGetVariable             0000000180004d38 f   libmex:libmex.dll
+ 0001:00003d3e       mexErrMsgIdAndTxt          0000000180004d3e f   libmex:libmex.dll
+ 0001:00003d44       mexAtExit                  0000000180004d44 f   libmex:libmex.dll
+ 0001:00003d4a       emlrtFirstTimeR2012b       0000000180004d4a f   libemlrt:libemlrt.dll
+ 0001:00003d50       emlrtEnterRtStackR2012b    0000000180004d50 f   libemlrt:libemlrt.dll
+ 0001:00003d56       emlrtClearAllocCountR2012b 0000000180004d56 f   libemlrt:libemlrt.dll
+ 0001:00003d5c       emlrtCreateRootTLS         0000000180004d5c f   libemlrt:libemlrt.dll
+ 0001:00003d62       emlrtGetBreakCheckFlagAddressR2012b 0000000180004d62 f   libemlrt:libemlrt.dll
+ 0001:00003d68       emlrtDestroyRootTLS        0000000180004d68 f   libemlrt:libemlrt.dll
+ 0001:00003d6e       emlrtLeaveRtStackR2012b    0000000180004d6e f   libemlrt:libemlrt.dll
+ 0001:00003d74       emlrtDynamicBoundsCheckR2012b 0000000180004d74 f   libemlrt:libemlrt.dll
+ 0001:00003d7a       emlrtIntegerCheckR2012b    0000000180004d7a f   libemlrt:libemlrt.dll
+ 0001:00003d80       emlrtAssign                0000000180004d80 f   libemlrt:libemlrt.dll
+ 0001:00003d86       emlrtExportNumericArrayR2008b 0000000180004d86 f   libemlrt:libemlrt.dll
+ 0001:00003d8c       emlrtDestroyArray          0000000180004d8c f   libemlrt:libemlrt.dll
+ 0001:00003d92       emlrtCheckBuiltInR2012b    0000000180004d92 f   libemlrt:libemlrt.dll
+ 0001:00003d98       emlrtImportArrayR2011b     0000000180004d98 f   libemlrt:libemlrt.dll
+ 0001:00003d9e       emlrtCheckVsBuiltInR2012b  0000000180004d9e f   libemlrt:libemlrt.dll
+ 0001:00003da4       emlrtAlias                 0000000180004da4 f   libemlrt:libemlrt.dll
+ 0001:00003daa       emlrtAliasP                0000000180004daa f   libemlrt:libemlrt.dll
+ 0001:00003db0       emlrtReturnArrayR2009a     0000000180004db0 f   libemlrt:libemlrt.dll
+ 0001:00003db6       muDoubleScalarSin          0000000180004db6 f   libmwmathutil:libmwmathutil.dll
+ 0001:00003dbc       muDoubleScalarCos          0000000180004dbc f   libmwmathutil:libmwmathutil.dll
+ 0001:00003dc2       muDoubleScalarExp          0000000180004dc2 f   libmwmathutil:libmwmathutil.dll
+ 0001:00003dc8       muDoubleScalarAbs          0000000180004dc8 f   libmwmathutil:libmwmathutil.dll
+ 0001:00003dce       muDoubleScalarPower        0000000180004dce f   libmwmathutil:libmwmathutil.dll
+ 0001:00003dd4       muDoubleScalarSqrt         0000000180004dd4 f   libmwmathutil:libmwmathutil.dll
+ 0001:00003dda       muDoubleScalarHypot        0000000180004dda f   libmwmathutil:libmwmathutil.dll
+ 0001:00003de0       muDoubleScalarIsInf        0000000180004de0 f   libmwmathutil:libmwmathutil.dll
+ 0001:00003de6       muDoubleScalarIsNaN        0000000180004de6 f   libmwmathutil:libmwmathutil.dll
+ 0001:00003dec       __GSHandlerCheckCommon     0000000180004dec f   MSVCRT:gshandler.obj
+ 0001:00003e50       __GSHandlerCheck           0000000180004e50 f   MSVCRT:gshandler.obj
+ 0001:00003e80       __security_check_cookie    0000000180004e80 f   MSVCRT:amdsecgs.obj
+ 0001:00003ea0       memcpy                     0000000180004ea0 f   MSVCRT:MSVCR100.dll
+ 0001:00003f08       _CRT_INIT                  0000000180004f08 f   MSVCRT:crtdll.obj
+ 0001:000042a0       _DllMainCRTStartup         00000001800052a0 f   MSVCRT:crtdll.obj
+ 0001:000042e0       __report_gsfailure         00000001800052e0 f   MSVCRT:gs_report.obj
+ 0001:0000442c       __clean_type_info_names    000000018000542c f   MSVCRT:tncleanup.obj
+ 0001:00004438       _onexit                    0000000180005438 f   MSVCRT:atonexit.obj
+ 0001:000044e8       atexit                     00000001800054e8 f   MSVCRT:atonexit.obj
+ 0001:00004500       _RTC_Initialize            0000000180005500 f   MSVCRT:_initsect_.obj
+ 0001:00004538       _RTC_Terminate             0000000180005538 f   MSVCRT:_initsect_.obj
+ 0001:00004570       _ValidateImageBase         0000000180005570 f   MSVCRT:pesect.obj
+ 0001:000045a0       _FindPESection             00000001800055a0 f   MSVCRT:pesect.obj
+ 0001:000045f0       _IsNonwritableInCurrentImage 00000001800055f0 f   MSVCRT:pesect.obj
+ 0001:00004632       _initterm                  0000000180005632 f   MSVCRT:MSVCR100.dll
+ 0001:00004638       _initterm_e                0000000180005638 f   MSVCRT:MSVCR100.dll
+ 0001:0000463e       _amsg_exit                 000000018000563e f   MSVCRT:MSVCR100.dll
+ 0001:00004644       __C_specific_handler       0000000180005644 f   MSVCRT:MSVCR100.dll
+ 0001:0000464a       __CppXcptFilter            000000018000564a f   MSVCRT:MSVCR100.dll
+ 0001:00004650       DllMain                    0000000180005650 f   MSVCRT:dllmain.obj
+ 0001:00004674       __security_init_cookie     0000000180005674 f   MSVCRT:gs_support.obj
+ 0001:00004728       __crt_debugger_hook        0000000180005728 f   MSVCRT:MSVCR100.dll
+ 0001:0000472e       __clean_type_info_names_internal 000000018000572e f   MSVCRT:MSVCR100.dll
+ 0001:00004734       _unlock                    0000000180005734 f   MSVCRT:MSVCR100.dll
+ 0001:0000473a       __dllonexit                000000018000573a f   MSVCRT:MSVCR100.dll
+ 0001:00004740       _lock                      0000000180005740 f   MSVCRT:MSVCR100.dll
+ 0001:00004746       RtlVirtualUnwind           0000000180005746 f   kernel32:KERNEL32.dll
+ 0001:0000474c       RtlLookupFunctionEntry     000000018000574c f   kernel32:KERNEL32.dll
+ 0002:00000000       __imp_GetSystemTimeAsFileTime 0000000180006000     kernel32:KERNEL32.dll
+ 0002:00000008       __imp_GetCurrentProcessId  0000000180006008     kernel32:KERNEL32.dll
+ 0002:00000010       __imp_GetCurrentThreadId   0000000180006010     kernel32:KERNEL32.dll
+ 0002:00000018       __imp_GetTickCount         0000000180006018     kernel32:KERNEL32.dll
+ 0002:00000020       __imp_QueryPerformanceCounter 0000000180006020     kernel32:KERNEL32.dll
+ 0002:00000028       __imp_DisableThreadLibraryCalls 0000000180006028     kernel32:KERNEL32.dll
+ 0002:00000030       __imp_RtlCaptureContext    0000000180006030     kernel32:KERNEL32.dll
+ 0002:00000038       __imp_RtlLookupFunctionEntry 0000000180006038     kernel32:KERNEL32.dll
+ 0002:00000040       __imp_RtlVirtualUnwind     0000000180006040     kernel32:KERNEL32.dll
+ 0002:00000048       __imp_IsDebuggerPresent    0000000180006048     kernel32:KERNEL32.dll
+ 0002:00000050       __imp_SetUnhandledExceptionFilter 0000000180006050     kernel32:KERNEL32.dll
+ 0002:00000058       __imp_UnhandledExceptionFilter 0000000180006058     kernel32:KERNEL32.dll
+ 0002:00000060       __imp_TerminateProcess     0000000180006060     kernel32:KERNEL32.dll
+ 0002:00000068       __imp_Sleep                0000000180006068     kernel32:KERNEL32.dll
+ 0002:00000070       __imp_DecodePointer        0000000180006070     kernel32:KERNEL32.dll
+ 0002:00000078       __imp_EncodePointer        0000000180006078     kernel32:KERNEL32.dll
+ 0002:00000080       __imp_GetCurrentProcess    0000000180006080     kernel32:KERNEL32.dll
+ 0002:00000088       \177KERNEL32_NULL_THUNK_DATA 0000000180006088     kernel32:KERNEL32.dll
+ 0002:00000090       __imp__encoded_null        0000000180006090     MSVCRT:MSVCR100.dll
+ 0002:00000098       __imp__initterm_e          0000000180006098     MSVCRT:MSVCR100.dll
+ 0002:000000a0       __imp__initterm            00000001800060a0     MSVCRT:MSVCR100.dll
+ 0002:000000a8       __imp__malloc_crt          00000001800060a8     MSVCRT:MSVCR100.dll
+ 0002:000000b0       __imp_memcpy               00000001800060b0     MSVCRT:MSVCR100.dll
+ 0002:000000b8       __imp__amsg_exit           00000001800060b8     MSVCRT:MSVCR100.dll
+ 0002:000000c0       __imp___C_specific_handler 00000001800060c0     MSVCRT:MSVCR100.dll
+ 0002:000000c8       __imp___CppXcptFilter      00000001800060c8     MSVCRT:MSVCR100.dll
+ 0002:000000d0       __imp___crt_debugger_hook  00000001800060d0     MSVCRT:MSVCR100.dll
+ 0002:000000d8       __imp___clean_type_info_names_internal 00000001800060d8     MSVCRT:MSVCR100.dll
+ 0002:000000e0       __imp__unlock              00000001800060e0     MSVCRT:MSVCR100.dll
+ 0002:000000e8       __imp___dllonexit          00000001800060e8     MSVCRT:MSVCR100.dll
+ 0002:000000f0       __imp__lock                00000001800060f0     MSVCRT:MSVCR100.dll
+ 0002:000000f8       __imp_free                 00000001800060f8     MSVCRT:MSVCR100.dll
+ 0002:00000100       __imp__onexit              0000000180006100     MSVCRT:MSVCR100.dll
+ 0002:00000108       \177MSVCR100_NULL_THUNK_DATA 0000000180006108     MSVCRT:MSVCR100.dll
+ 0002:00000110       __imp_emlrtAlias           0000000180006110     libemlrt:libemlrt.dll
+ 0002:00000118       __imp_emlrtCheckVsBuiltInR2012b 0000000180006118     libemlrt:libemlrt.dll
+ 0002:00000120       __imp_emlrtImportArrayR2011b 0000000180006120     libemlrt:libemlrt.dll
+ 0002:00000128       __imp_emlrtCheckBuiltInR2012b 0000000180006128     libemlrt:libemlrt.dll
+ 0002:00000130       __imp_emlrtDestroyArray    0000000180006130     libemlrt:libemlrt.dll
+ 0002:00000138       __imp_emlrtExportNumericArrayR2008b 0000000180006138     libemlrt:libemlrt.dll
+ 0002:00000140       __imp_emlrtAssign          0000000180006140     libemlrt:libemlrt.dll
+ 0002:00000148       __imp_emlrtIntegerCheckR2012b 0000000180006148     libemlrt:libemlrt.dll
+ 0002:00000150       __imp_emlrtAliasP          0000000180006150     libemlrt:libemlrt.dll
+ 0002:00000158       __imp_emlrtDynamicBoundsCheckR2012b 0000000180006158     libemlrt:libemlrt.dll
+ 0002:00000160       __imp_emlrtLeaveRtStackR2012b 0000000180006160     libemlrt:libemlrt.dll
+ 0002:00000168       __imp_emlrtDestroyRootTLS  0000000180006168     libemlrt:libemlrt.dll
+ 0002:00000170       __imp_emlrtGetBreakCheckFlagAddressR2012b 0000000180006170     libemlrt:libemlrt.dll
+ 0002:00000178       __imp_emlrtCreateRootTLS   0000000180006178     libemlrt:libemlrt.dll
+ 0002:00000180       __imp_emlrtClearAllocCountR2012b 0000000180006180     libemlrt:libemlrt.dll
+ 0002:00000188       __imp_emlrtEnterRtStackR2012b 0000000180006188     libemlrt:libemlrt.dll
+ 0002:00000190       __imp_emlrtReturnArrayR2009a 0000000180006190     libemlrt:libemlrt.dll
+ 0002:00000198       __imp_emlrtFirstTimeR2012b 0000000180006198     libemlrt:libemlrt.dll
+ 0002:000001a0       \177libemlrt_NULL_THUNK_DATA 00000001800061a0     libemlrt:libemlrt.dll
+ 0002:000001a8       __imp_mexPutVariable       00000001800061a8     libmex:libmex.dll
+ 0002:000001b0       __imp_mexErrMsgIdAndTxt    00000001800061b0     libmex:libmex.dll
+ 0002:000001b8       __imp_mexAtExit            00000001800061b8     libmex:libmex.dll
+ 0002:000001c0       __imp_mexGetVariable       00000001800061c0     libmex:libmex.dll
+ 0002:000001c8       \177libmex_NULL_THUNK_DATA 00000001800061c8     libmex:libmex.dll
+ 0002:000001d0       __imp_muDoubleScalarPower  00000001800061d0     libmwmathutil:libmwmathutil.dll
+ 0002:000001d8       __imp_muDoubleScalarCos    00000001800061d8     libmwmathutil:libmwmathutil.dll
+ 0002:000001e0       __imp_muDoubleScalarSin    00000001800061e0     libmwmathutil:libmwmathutil.dll
+ 0002:000001e8       __imp_muDoubleScalarSqrt   00000001800061e8     libmwmathutil:libmwmathutil.dll
+ 0002:000001f0       __imp_muDoubleScalarIsInf  00000001800061f0     libmwmathutil:libmwmathutil.dll
+ 0002:000001f8       __imp_muDoubleScalarIsNaN  00000001800061f8     libmwmathutil:libmwmathutil.dll
+ 0002:00000200       __imp_muDoubleScalarExp    0000000180006200     libmwmathutil:libmwmathutil.dll
+ 0002:00000208       __imp_muDoubleScalarAbs    0000000180006208     libmwmathutil:libmwmathutil.dll
+ 0002:00000210       __imp_muDoubleScalarHypot  0000000180006210     libmwmathutil:libmwmathutil.dll
+ 0002:00000218       \177libmwmathutil_NULL_THUNK_DATA 0000000180006218     libmwmathutil:libmwmathutil.dll
+ 0002:00000220       __imp_mxCreateStructMatrix_700 0000000180006220     libmx:libmx.dll
+ 0002:00000228       __imp_mxCreateLogicalMatrix_700 0000000180006228     libmx:libmx.dll
+ 0002:00000230       __imp_mxCreateString       0000000180006230     libmx:libmx.dll
+ 0002:00000238       __imp_mxSetFieldByNumber_700 0000000180006238     libmx:libmx.dll
+ 0002:00000240       __imp_mxGetData            0000000180006240     libmx:libmx.dll
+ 0002:00000248       __imp_mxCreateDoubleScalar 0000000180006248     libmx:libmx.dll
+ 0002:00000250       __imp_mxCreateNumericArray_700 0000000180006250     libmx:libmx.dll
+ 0002:00000258       __imp_mxCreateNumericMatrix_700 0000000180006258     libmx:libmx.dll
+ 0002:00000260       __imp_mxGetPr              0000000180006260     libmx:libmx.dll
+ 0002:00000268       __imp_mxGetPi              0000000180006268     libmx:libmx.dll
+ 0002:00000270       __imp_mxGetInf             0000000180006270     libmx:libmx.dll
+ 0002:00000278       __imp_mxGetNaN             0000000180006278     libmx:libmx.dll
+ 0002:00000280       \177libmx_NULL_THUNK_DATA  0000000180006280     libmx:libmx.dll
+ 0002:00000288       __xc_a                     0000000180006288     MSVCRT:cinitexe.obj
+ 0002:00000290       __xc_z                     0000000180006290     MSVCRT:cinitexe.obj
+ 0002:00000298       __xi_a                     0000000180006298     MSVCRT:cinitexe.obj
+ 0002:000002a8       __xi_z                     00000001800062a8     MSVCRT:cinitexe.obj
+ 0002:000002b0       ??_C@_00CNPNBAHC@?$AA@     00000001800062b0     RefField_data.obj
+ 0002:000002b8       ??_C@_0N@GMMGIJPM@RefField_api?$AA@ 00000001800062b8     RefField_data.obj
+ 0002:000002d0       ??_C@_0FI@CFAJHO@C?3?1Mingming?1Master?5Thesis?1Superv@ 00000001800062d0     RefField_data.obj
+ 0002:00000328       ??_C@_08DELIDCDK@RefField?$AA@ 0000000180006328     RefField_data.obj
+ 0002:00000334       ??_C@_03JLPAMFEP@CEP?$AA@  0000000180006334     RefField.obj
+ 0002:00000338       ??_C@_03PNFNLNLI@eta?$AA@  0000000180006338     RefField.obj
+ 0002:0000033c       ??_C@_06DANODJPF@Rcoeff?$AA@ 000000018000633c     RefField.obj
+ 0002:00000348       __real@8000000000000000    0000000180006348     RefField.obj
+ 0002:00000350       __real@bfe0000000000000    0000000180006350     RefField.obj
+ 0002:00000358       __real@3fe0000000000000    0000000180006358     RefField.obj
+ 0002:00000360       __real@bff0000000000000    0000000180006360     RefField.obj
+ 0002:00000370       __mask@@NegDouble@         0000000180006370     RefField.obj
+ 0002:00000380       __real@3eb0c6f7a0b5ed8d    0000000180006380     RefField.obj
+ 0002:00000388       __real@4000000000000000    0000000180006388     RefField.obj
+ 0002:00000390       __real@3ff0000000000000    0000000180006390     RefField.obj
+ 0002:00000398       __real@0010000000000000    0000000180006398     norm.obj
+ 0002:000003a0       __real@3ff6a09e667f3bcd    00000001800063a0     sqrt.obj
+ 0002:000003a8       __real@7fcfffffffffffff    00000001800063a8     sqrt.obj
+ 0002:000003b0       __real@c000000000000000    00000001800063b0     sqrt.obj
+ 0002:000003c0       ??_C@_06BNJCAIGJ@double?$AA@ 00000001800063c0     RefField_api.obj
+ 0002:000003c8       ??_C@_07OLMIPCBG@GRcoeff?$AA@ 00000001800063c8     RefField_api.obj
+ 0002:000003d0       ??_C@_01KNKLHLMO@K?$AA@    00000001800063d0     RefField_api.obj
+ 0002:000003d4       ??_C@_04PAOIBBOA@Geta?$AA@ 00000001800063d4     RefField_api.obj
+ 0002:000003dc       ??_C@_06FJKEMHGD@global?$AA@ 00000001800063dc     RefField_api.obj
+ 0002:000003e4       ??_C@_04JGEFGJBH@GCEP?$AA@ 00000001800063e4     RefField_api.obj
+ 0002:000003ec       ??_C@_03MOAJDOGK@Ein?$AA@  00000001800063ec     RefField_api.obj
+ 0002:000003f0       ??_C@_04MDEOPNOG@n_re?$AA@ 00000001800063f0     RefField_api.obj
+ 0002:000003f8       ??_C@_05NBMAAPLP@qr_re?$AA@ 00000001800063f8     RefField_api.obj
+ 0002:00000400       ??_C@_04KHJPKIGB@R_re?$AA@ 0000000180006400     RefField_api.obj
+ 0002:00000408       ??_C@_04HFFPODPD@E_re?$AA@ 0000000180006408     RefField_api.obj
+ 0002:00000410       ??_C@_03OMDMFKEH@blo?$AA@  0000000180006410     RefField_api.obj
+ 0002:00000414       ??_C@_04PCIIJCIJ@pblo?$AA@ 0000000180006414     RefField_api.obj
+ 0002:00000420       ??_C@_0CH@DLJMAEFE@emlcoder?3emlmex?3TooManyOutputArg@ 0000000180006420     RefField_mex.obj
+ 0002:00000448       ??_C@_0DG@LNJDAPCE@Too?5many?5output?5arguments?5for?5en@ 0000000180006448     RefField_mex.obj
+ 0002:00000480       ??_C@_0CE@IHHIPLIO@emlcoder?3emlmex?3WrongNumberOfInp@ 0000000180006480     RefField_mex.obj
+ 0002:000004a8       ??_C@_0CO@JIHCJOAD@7?5inputs?5required?5for?5entry?9poin@ 00000001800064a8     RefField_mex.obj
+ 0002:000004d8       ??_C@_0BD@NDMMKFEF@8?40?40?4783?5?$CIR2012b?$CJ?$AA@ 00000001800064d8     RefField_mex.obj
+ 0002:000004f0       __real@401c000000000000    00000001800064f0     RefField_mex.obj
+ 0002:000004f8       ??_C@_0P@FDPDNMBC@ConstantInputs?$AA@ 00000001800064f8     RefField_mex.obj
+ 0002:00000508       ??_C@_0BA@HBLCOFA@NumberOfOutputs?$AA@ 0000000180006508     RefField_mex.obj
+ 0002:00000518       ??_C@_0P@DJPKAEOC@NumberOfInputs?$AA@ 0000000180006518     RefField_mex.obj
+ 0002:00000528       ??_C@_04FABLJDN@Name?$AA@  0000000180006528     RefField_mex.obj
+ 0002:00000530       ??_C@_0M@HOOGCLMJ@EntryPoints?$AA@ 0000000180006530     RefField_mex.obj
+ 0002:00000540       ??_C@_07NGFJPNPN@Version?$AA@ 0000000180006540     RefField_mex.obj
+ 0002:00000548       _pRawDllMain               0000000180006548     MSVCRT:crtdll.obj
+ 0002:00000548       _pDefaultRawDllMain        0000000180006548     MSVCRT:crtdll.obj
+ 0002:00000560       __rtc_iaa                  0000000180006560     MSVCRT:_initsect_.obj
+ 0002:00000568       __rtc_izz                  0000000180006568     MSVCRT:_initsect_.obj
+ 0002:00000570       __rtc_taa                  0000000180006570     MSVCRT:_initsect_.obj
+ 0002:00000578       __rtc_tzz                  0000000180006578     MSVCRT:_initsect_.obj
+ 0002:0000080c       __IMPORT_DESCRIPTOR_libmx  000000018000680c     libmx:libmx.dll
+ 0002:00000820       __IMPORT_DESCRIPTOR_libmex 0000000180006820     libmex:libmex.dll
+ 0002:00000834       __IMPORT_DESCRIPTOR_libemlrt 0000000180006834     libemlrt:libemlrt.dll
+ 0002:00000848       __IMPORT_DESCRIPTOR_libmwmathutil 0000000180006848     libmwmathutil:libmwmathutil.dll
+ 0002:0000085c       __IMPORT_DESCRIPTOR_MSVCR100 000000018000685c     MSVCRT:MSVCR100.dll
+ 0002:00000870       __IMPORT_DESCRIPTOR_KERNEL32 0000000180006870     kernel32:KERNEL32.dll
+ 0002:00000884       __NULL_IMPORT_DESCRIPTOR   0000000180006884     libmx:libmx.dll
+ 0003:00000000       emlrtRTEI                  0000000180008000     RefField_data.obj
+ 0003:00000018       b_emlrtRTEI                0000000180008018     RefField_data.obj
+ 0003:00000030       c_emlrtRTEI                0000000180008030     RefField_data.obj
+ 0003:00000048       d_emlrtRTEI                0000000180008048     RefField_data.obj
+ 0003:000002c0       emlrtContextGlobal         00000001800082c0     RefField_mex.obj
+ 0003:00000300       _fltused                   0000000180008300     MSVCRT:dllsupp.obj
+ 0003:00000308       __security_cookie          0000000180008308     MSVCRT:gs_cookie.obj
+ 0003:00000310       __security_cookie_complement 0000000180008310     MSVCRT:gs_cookie.obj
+ 0003:00000320       __native_dllmain_reason    0000000180008320     MSVCRT:natstart.obj
+ 0003:00000324       __native_vcclrit_reason    0000000180008324     MSVCRT:natstart.obj
+ 0003:00000348       emlrtRootTLSGlobal         0000000180008348     RefField_mex.obj
+ 0003:000008d0       ?__type_info_root_node@@3U__type_info_node@@A 00000001800088d0     MSVCRT:tncleanup.obj
+ 0003:000008e0       GRcoeff                    00000001800088e0     <common>
+ 0003:000008e8       GCEP                       00000001800088e8     <common>
+ 0003:00000900       CEP                        0000000180008900     <common>
+ 0003:00000db8       CEP_dirty                  0000000180008db8     <common>
+ 0003:00000dbc       Geta_dirty                 0000000180008dbc     <common>
+ 0003:00000dc0       Rcoeff_dirty               0000000180008dc0     <common>
+ 0003:00000dc4       GCEP_dirty                 0000000180008dc4     <common>
+ 0003:00000dc8       K_dirty                    0000000180008dc8     <common>
+ 0003:00000dd0       Geta                       0000000180008dd0     <common>
+ 0003:00000de0       eta_dirty                  0000000180008de0     <common>
+ 0003:00000de8       K                          0000000180008de8     <common>
+ 0003:00000df0       GRcoeff_dirty              0000000180008df0     <common>
+ 0003:00000e00       Rcoeff                     0000000180008e00     <common>
+ 0003:000012c0       eta                        00000001800092c0     <common>
+ 0003:00001c28       __native_startup_state     0000000180009c28     <common>
+ 0003:00001c30       __native_startup_lock      0000000180009c30     <common>
+ 0003:00001c38       __onexitend                0000000180009c38     <common>
+ 0003:00001c40       __onexitbegin              0000000180009c40     <common>
+ 0003:00001c48       __dyn_tls_init_callback    0000000180009c48     <common>
+
+ entry point at        0001:000042a0
+
+ Static symbols
+
+ 0001:00000000       RefField_once              0000000180001000 f   RefField_initialize.obj
+ 0001:00002f50       emlrt_marshallIn           0000000180003f50 f   RefField_api.obj
+ 0001:00003000       c_emlrt_marshallIn         0000000180004000 f   RefField_api.obj
+ 0001:000030a0       e_emlrt_marshallIn         00000001800040a0 f   RefField_api.obj
+ 0001:00003180       m_emlrt_marshallIn         0000000180004180 f   RefField_api.obj
+ 0001:00003a80       RefField_mexFunction       0000000180004a80 f   RefField_mex.obj
+ 0001:00003ea8       pre_c_init                 0000000180004ea8 f   MSVCRT:crtdll.obj
+ 0001:00004164       __DllMainCRTStartup        0000000180005164 f   MSVCRT:crtdll.obj
+ 0001:00004760       __DllMainCRTStartup$filt$0 0000000180005760 f   MSVCRT:crtdll.obj
+ 0001:00004790       __DllMainCRTStartup$fin$1  0000000180005790 f   MSVCRT:crtdll.obj
+ 0001:000047aa       _onexit$fin$0              00000001800057aa f   MSVCRT:atonexit.obj
+ 0001:000047d0       _IsNonwritableInCurrentImage$filt$0 00000001800057d0 f   MSVCRT:pesect.obj

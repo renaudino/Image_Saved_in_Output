@@ -1,0 +1,203 @@
+% Generate the input file
+
+% Authors: Francesco Mani <francesco.mani@uclouvain.be> and Mingming Gan <gan@ftw.at>
+% History:  2011.9.26
+
+% Updated by: Xuhong Li <xuhong@ftw.at>
+% History: 2013.08.01
+
+function inputData()
+load WedgesInputSC3.mat;       % the data of blocks
+load OutWedgesSC3.mat;    % the data which is not related to blocks
+
+global DBIMAGES status Nblock kxpol emett wedges DSFlag MSKFlag CEP ...
+       Permitt Conduct Model Scoeff Lam Ar Aii GDSFlag GMSKFlag GCEP ...
+       GPermitt GConduct GModel GScoeff GLam GAr GAii ...
+       Path recept Nreflx Ninterac freq TransmitType Lt Trans_Pattern ...
+       Txang ReceiveType Lr Receive_Pattern AzimutR Elevatr Rxang RTH NRFLMAX NbrSlns...
+       Mtrun; % cell array to matrix
+
+
+DBIMAGES=[1,zeros(1,8)];  %  match the dimentation of Mtrun (M*N*9)
+                          % 1        flag     0--empty   1--point exist
+                          % 2 3      face     2--block index   3--surface index
+                          % 4 5 6    point
+                          % 7        number of surfaces
+                          % 8 9      previous level
+
+NRFLMAX = 10;    % the maximal reflection order
+status = outwedges(1);
+Nblock = outwedges(2);    % the number of blocks
+kxpol = outwedges(3);     % related to the depolarization of the diffuse ray
+emett = outwedges(4:6);   % the transmitter position
+wedges = zeros(Nblock,6,4,3);    % the block coordinates (10 values for each block)
+                                 % 1st dimension: block number;
+                                 % 2nd dimension: surface number of each block;
+                                 % 3rd dimension: point number of each surface;
+                                 % 4th dimension: coordinated of one point.
+DSFlag = zeros(Nblock,1);    % diffuse scattering flag (if the block has scattering): 0 -- not, 1 -- yes
+MSKFlag = zeros(Nblock,1);   % penetration flag (if the block has penetration): 1 --not, 0 -- yes
+CEP = zeros(Nblock,1);       % if the block is a perfect electric conductor: 0 -- not, 1 -- yes
+Permitt = zeros(Nblock,1);   % the block permittivity 
+Conduct = zeros(Nblock,1);   % the block conductivity
+Model = zeros(Nblock,1);     % Model, Scoeff, Lam, Ar, Ali are related to diffuse scattering
+Scoeff = zeros(Nblock,1);
+Lam = zeros(Nblock,1);
+Ar = zeros(Nblock,1);
+Aii = zeros(Nblock,1);
+
+GDSFlag = outwedges(7);     % the input data related to ground
+GMSKFlag = outwedges(8);
+GCEP = outwedges(9);
+GPermitt = outwedges(10);
+GConduct = outwedges(11);
+GModel= outwedges(12);
+GScoeff = outwedges(13);
+GLam = outwedges(14);
+GAr = outwedges(15);
+GAii = outwedges(16);
+recept = outwedges(17:19);    % the receiver position
+Nreflx = outwedges(20);       % relection number (always 3 or 4)
+
+
+
+Mtrun(1,1,:)=DBIMAGES;
+Mtrun(1,1,2)=-1;             % start to build the image tree from Tx
+                             %  "-1"  index of Tx
+Mtrun(1,1,4:6)=emett;        % coordinates of Tx
+
+
+
+
+Path = zeros(Nreflx+1,2);  % the address of images 
+NbrSlns = zeros(NRFLMAX,1);
+
+for i = 1:Nblock    
+    
+    wedges(i,1,1,1) = WedgesInput(1,i);    % the point order should be counterclockwise 
+    wedges(i,1,1,2) = WedgesInput(2,i);
+    wedges(i,1,2,1) = WedgesInput(3,i);
+    wedges(i,1,2,2) = WedgesInput(4,i);
+    wedges(i,2,2,1) = WedgesInput(5,i);
+    wedges(i,2,2,2) = WedgesInput(6,i);
+    wedges(i,3,2,1) = WedgesInput(7,i);
+    wedges(i,3,2,2) = WedgesInput(8,i);
+    wedges(i,1,1,3) = WedgesInput(9,i);
+    wedges(i,1,3,3) = WedgesInput(10,i);
+    DSFlag(i) = WedgesInput(11,i);
+    MSKFlag(i) = WedgesInput(12,i);
+    CEP(i) = WedgesInput(13,i);
+    Permitt(i) = WedgesInput(14,i);
+    Conduct(i) = WedgesInput(15,i);
+    Model(i) = WedgesInput(16,i);
+    Scoeff(i) = WedgesInput(17,i);
+    Lam(i) = WedgesInput(18,i);
+    Ar(i) = WedgesInput(19,i);
+    Aii(i) = WedgesInput(20,i);
+    
+end
+
+
+Ninterac = outwedges(21);     % 0 -- single scattering, 1 -- first order relection and first order scattering (divided into first interaciton and last interaction cases)
+freq = outwedges(22);
+TransmitType = outwedges(23);
+
+if (TransmitType == 2)
+    Lt = outwedges(24);
+elseif (TransmitType == 3)
+    Trans_Pattern = outwedges(24);
+elseif (TransmitType == 4)
+    Txang = outwedges(24);
+end 
+ 
+ReceiveType = outwedges(25);
+
+if (ReceiveType == 2)
+    Lr = outwedges(26);
+elseif (ReceiveType == 3)
+    Receive_Pattern = outwedges(26);
+    AzimutR = outwedges(27);
+    Elevatr = outwedges(28);  
+elseif (ReceiveType == 4)
+    Rxang = outwedges(26);
+end 
+
+RTH = outwedges(27);    % related to diffraction 
+
+for i = 1:Nblock        % the whole coordinates of each point in one block
+    wedges(i,1,4,1) = wedges(i,1,1,1);
+    wedges(i,4,2,1) = wedges(i,1,1,1);
+    wedges(i,4,3,1) = wedges(i,1,1,1);
+    wedges(i,5,4,1) = wedges(i,1,1,1);
+    wedges(i,6,1,1) = wedges(i,1,1,1);
+
+    wedges(i,1,4,2) = wedges(i,1,1,2);
+    wedges(i,4,2,2) = wedges(i,1,1,2);
+    wedges(i,4,3,2) = wedges(i,1,1,2);
+    wedges(i,5,4,2) = wedges(i,1,1,2);
+    wedges(i,6,1,2) = wedges(i,1,1,2);
+
+    wedges(i,1,3,1) = wedges(i,1,2,1);
+    wedges(i,2,1,1) = wedges(i,1,2,1);
+    wedges(i,2,4,1) = wedges(i,1,2,1);
+    wedges(i,5,3,1) = wedges(i,1,2,1);
+    wedges(i,6,2,1) = wedges(i,1,2,1);
+
+    wedges(i,1,3,2) = wedges(i,1,2,2);
+    wedges(i,2,1,2) = wedges(i,1,2,2);
+    wedges(i,2,4,2) = wedges(i,1,2,2);
+    wedges(i,5,3,2) = wedges(i,1,2,2);
+    wedges(i,6,2,2) = wedges(i,1,2,2);
+
+    wedges(i,2,3,1) = wedges(i,2,2,1);
+    wedges(i,3,1,1) = wedges(i,2,2,1);
+    wedges(i,3,4,1) = wedges(i,2,2,1);
+    wedges(i,5,2,1) = wedges(i,2,2,1);
+    wedges(i,6,3,1) = wedges(i,2,2,1);
+
+    wedges(i,2,3,2) = wedges(i,2,2,2);
+    wedges(i,3,1,2) = wedges(i,2,2,2);
+    wedges(i,3,4,2) = wedges(i,2,2,2);
+    wedges(i,5,2,2) = wedges(i,2,2,2);
+    wedges(i,6,3,2) = wedges(i,2,2,2);
+
+    wedges(i,3,3,1) = wedges(i,3,2,1);
+    wedges(i,4,1,1) = wedges(i,3,2,1);
+    wedges(i,4,4,1) = wedges(i,3,2,1);
+    wedges(i,5,1,1) = wedges(i,3,2,1);
+    wedges(i,6,4,1) = wedges(i,3,2,1);
+
+    wedges(i,3,3,2) = wedges(i,3,2,2);
+    wedges(i,4,1,2) = wedges(i,3,2,2);
+    wedges(i,4,4,2) = wedges(i,3,2,2);
+    wedges(i,5,1,2) = wedges(i,3,2,2);
+    wedges(i,6,4,2) = wedges(i,3,2,2);
+
+    wedges(i,1,2,3) = wedges(i,1,1,3);
+    wedges(i,2,1,3) = wedges(i,1,1,3);
+    wedges(i,2,2,3) = wedges(i,1,1,3);
+    wedges(i,3,1,3) = wedges(i,1,1,3);
+    wedges(i,3,2,3) = wedges(i,1,1,3);
+    wedges(i,4,1,3) = wedges(i,1,1,3);
+    wedges(i,4,2,3) = wedges(i,1,1,3);
+    wedges(i,5,1,3) = wedges(i,1,1,3);
+    wedges(i,5,2,3) = wedges(i,1,1,3);
+    wedges(i,5,3,3) = wedges(i,1,1,3);
+    wedges(i,5,4,3) = wedges(i,1,1,3);
+
+    wedges(i,1,4,3) = wedges(i,1,3,3);
+    wedges(i,2,3,3) = wedges(i,1,3,3);
+    wedges(i,2,4,3) = wedges(i,1,3,3);
+    wedges(i,3,3,3) = wedges(i,1,3,3);
+    wedges(i,3,4,3) = wedges(i,1,3,3);
+    wedges(i,4,3,3) = wedges(i,1,3,3);
+    wedges(i,4,4,3) = wedges(i,1,3,3);
+    wedges(i,6,1,3) = wedges(i,1,3,3);
+    wedges(i,6,2,3) = wedges(i,1,3,3);
+    wedges(i,6,3,3) = wedges(i,1,3,3);
+    wedges(i,6,4,3) = wedges(i,1,3,3);
+end
+
+
+
+

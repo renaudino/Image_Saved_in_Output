@@ -1,0 +1,9 @@
+libemlrt.lib
+libut.lib
+libmwblascompat32.lib
+libmwmathutil.lib
+/export:mexFunction
+/export:emlrtMexFcnProperties
+/export:EffConstruct
+/export:EffConstruct_initialize
+/export:EffConstruct_terminate

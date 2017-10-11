@@ -1,0 +1,12 @@
+LIBRARY PointsImages.mexw64
+EXPORTS
+mexFunction
+emlrtMexFcnProperties
+PointsImagesm
+emxEnsureCapacity
+emxFree_real_T
+emxInit_real_T
+emxInit_real_T1
+PointsImagesm_initialize
+PointsImagesm_terminate
+PointsImagesm_atexit
